@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <record id="sample_report" model="ir.ui.view">
+        <field name="name">report</field>
+        <field name="model">report.report</field>
+        <field type="xml">
+
+        </field>
+        </record>
+    </data>
+</odoo>
