@@ -8,8 +8,7 @@ class MrpProduction(models.Model):
     def button_mark_done(self):
         res = super(MrpProduction, self).button_mark_done()
         invoice_lines = []
-        query = self.env.cr.execute("UPDATE sale_order SET invoice_status='invoiced' WHERE name='"+str(self.origin)+"'")
-        print(query)
+        print('origin',self.origin)
         invoice = self.env['account.move'].search([('invoice_origin', '=', self.origin)])
         if not invoice.invoice_origin:
             if self.origin:
@@ -35,6 +34,7 @@ class MrpProduction(models.Model):
                     'currency_id': data1.pricelist_id.currency_id.id,
                     'invoice_line_ids': invoice_lines
                 })
+                data1.write({'invoice_status' : 'invoiced'})
         return res
 
 
