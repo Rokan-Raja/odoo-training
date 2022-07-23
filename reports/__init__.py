@@ -1,1 +1,1 @@
-from . import report
+from . import report, report_xlsx
