@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from datetime import datetime
 
 
 class SaleOrder(models.Model):
@@ -22,7 +23,8 @@ class SaleOrder(models.Model):
         return val
 
     def date_time(self):
-        date = self.datetime
+        now = datetime.now()
+        date = now.strftime("%d/%m/%Y %H:%M:%S")
         print(date)
         return date
 

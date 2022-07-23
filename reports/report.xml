@@ -17,7 +17,18 @@
             <t t-call="web.external_layout">
                 <div class="page">
                     <div class="oe_structure">
-                        <h2 class="text-center" >Order Priority Report</h2><br/>
+                        <h2 class="text-center">Order Priority Report</h2>
+                        <br/>
+                        <t t-set="i" t-value="1"/>
+                        <t t-foreach="docs" t-as="doc">
+                            <div t-if="i == 1">
+                                <p>Date :
+                                    <t t-esc="doc.date_time()"/>
+                                </p>
+                                <t t-set="i" t-value="i+1"/>
+                            </div>
+                        </t>
+
                         <table class="table table-sm o_main_table">
                             <thead style="display: table-row-group">
                                 <tr>
@@ -27,15 +38,23 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            <t t-foreach="docs" t-as="doc">
-                                <t t-foreach="doc.get_data(doc.name)" t-as="data">
-                                    <tr>
-                                    <td class="text-left"><t t-esc="doc.name"/></td>
-                                    <td class="text-right"><t t-esc="doc.client_order_ref"/></td>
-                                    <td class="text-right">Completed(<t t-esc="data['total']"/>/<t t-esc="data['count']"/>)</td>
-                                    </tr>
+                                <t t-foreach="docs" t-as="doc">
+                                    <t t-foreach="doc.get_data(doc.name)" t-as="data">
+                                        <div t-if="data['count'] != 0">
+                                            <tr>
+                                                <td class="text-left">
+                                                    <t t-esc="doc.name"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <t t-esc="doc.client_order_ref"/>
+                                                </td>
+                                                <td class="text-right">Completed(<t t-esc="data['total']"/>/<t
+                                                        t-esc="data['count']"/>)
+                                                </td>
+                                            </tr>
+                                        </div>
+                                    </t>
                                 </t>
-                            </t>
                             </tbody>
                         </table>
                     </div>
