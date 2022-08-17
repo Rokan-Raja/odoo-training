@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="Orderline" t-inherit="point_of_sale.Orderline" t-inherit-mode="extension" owl="1">
+        <xpath expr="//span[hasclass('price')]" position="replace">
+            <span class="price">
+                <t t-if="props.line.get_product().is_combo">
+                    <t t-esc="env.pos.format_currency(props.line.get_product().combo_price)"/>
+                </t>
+                <t t-if="!props.line.get_product().is_combo">
+                    <t t-esc="env.pos.format_currency(props.line.get_display_price())"/>
+                </t>
+            </span>
+            <t t-if="props.line.get_product().is_combo">
+              <t t-foreach="props.line.get_product().combo_product_id" t-as="prod_info">
+                  <p><t t-esc="prod_info.name" />
+                      <t t-if="prod_info.quantity==1">
+                          <span> </span>
+                          <t t-esc="props.line.quantity"/>.00 unit(s).
+                      </t>
+                      <t t-if="prod_info.quantity != 1">
+                          <span> </span>
+                          <t t-esc="props.line.quantity*prod_info.quantity"/>.00 unit(s).
+                      </t>
+                  </p>
+                </t>
+            </t>
+        </xpath>
+    </t>
+
+</templates>

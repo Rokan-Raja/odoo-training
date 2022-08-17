@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="ComboDisplay" t-inherit="point_of_sale.ProductItem" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('product-name')]" position="replace">
+            <div class="product-name">
+                <t t-if="props.product.is_combo">
+                  <p class="combo_product_item">Combo Product</p>
+                    <p><t t-esc="props.product.display_name" /></p>
+                 </t>
+                <t t-if="!props.product.is_combo">
+                    <t t-esc="props.product.display_name" />
+                </t>
+            </div>
+        </xpath>
+        <!--        <xpath expr="//span[hasclass('price-tag')]" position="replace">-->
+        <!--            <span class="price-tag">-->
+        <!--                <t t-if="props.product.is_combo">-->
+        <!--                    <span><t t-esc="props.product.pos.company_currency.symbol"/> </span>-->
+        <!--                    <t t-esc="props.product.combo_price"/>-->
+        <!--                    <span>.00</span>-->
+        <!--                </t>-->
+        <!--                <t t-if="props.product.is_combo == false">-->
+        <!--                    <t t-esc="price"/>-->
+        <!--                </t>-->
+        <!--            </span>-->
+        <!--        </xpath>-->
+    </t>
+</templates>

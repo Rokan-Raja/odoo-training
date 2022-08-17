@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="product_template_form_view_combo" model="ir.ui.view">
+        <field name="name">product.template.combo.form.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="/form/sheet/div[hasclass('oe_title')]/div[@name='options']" position="inside">
+                <div>
+                    <field name="is_combo"/>
+                    <label for="is_combo"/>
+                </div>
+            </xpath>
+
+            <xpath expr="//div[@name='pricing']" position="after">
+                <field name="combo_price" attrs="{'invisible':[('is_combo','=',False)]}" string="Combo Price"
+                       class="oe_inline" widget='monetary'
+                       options="{'currency_field': 'currency_id', 'field_digits': True}"/>
+            </xpath>
+
+            <xpath expr="/form/sheet/notebook/page[@name='sales']" position="after">
+                <page name="combo_product" string="Combo Product" attrs="{'invisible':[('is_combo','=',False)]}">
+                    <field name="combo_product_id">
+                        <tree editable="bottom">
+                            <field name="require"/>
+                            <field name="product_id" options="{'no_create': True}"/>
+                            <field name="product_quantity"/>
+                            <field name="uom_id" readonly="1"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
