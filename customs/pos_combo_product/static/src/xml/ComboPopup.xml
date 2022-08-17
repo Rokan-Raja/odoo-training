@@ -9,9 +9,7 @@
                         <t t-esc="props.title" />
                     </header>
                     <main class="body">
-                        <t t-foreach="props.product.combo_product_id" t-key="a" t-as="info" >
-                            <p><t t-esc="info.name" /><span> </span>with<span> </span><t t-esc="info.quantity"/>.00<span> </span> Unit(s)</p>
-                        </t>
+                            <t t-esc="props.body" />
                     </main>
                     <footer class="footer">
                         <div class="button confirm" t-on-click="confirm">

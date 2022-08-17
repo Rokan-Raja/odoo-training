@@ -5,7 +5,6 @@ odoo.define("pos_combo_product.ProductScreen", function (require) {
     const pos_combo_product = (ProductScreen) =>
         class extends ProductScreen {
             async _clickProduct(event) {
-                console.log(event.detail.combo_product_id);
                 if(event.detail.is_combo)
                 {
                 const { confirmed } = await this.showPopup('ComboPopup', {
@@ -13,7 +12,6 @@ odoo.define("pos_combo_product.ProductScreen", function (require) {
                 body: this.env._t(
                     'Are you sure purchase the product'
                 ),
-                product: event.detail,
                 });
                 if(confirmed)
                 {

@@ -35,4 +35,9 @@ class ComboProductTemplate(models.Model):
     is_combo = fields.Boolean('Combo Product', default=False)
     combo_price = fields.Float('Combo Price', required=True)
 
+class PosOrderLine(models.Model):
+    _inherit = 'pos.order.line'
+    is_combo = fields.Boolean(default=False)
+    combo_product =fields.Boolean(default=False)
+
 

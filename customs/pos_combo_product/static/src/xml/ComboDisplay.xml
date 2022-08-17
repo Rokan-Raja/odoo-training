@@ -4,11 +4,11 @@
         <xpath expr="//div[hasclass('product-name')]" position="replace">
             <div class="product-name">
                 <t t-if="props.product.is_combo">
-                  <p class="combo_product_item">Combo Product</p>
+                  <p class="combo_product_item">Combo</p>
                     <p><t t-esc="props.product.display_name" /></p>
                  </t>
                 <t t-if="!props.product.is_combo">
-                    <t t-esc="props.product.display_name" />
+                    <p><t t-esc="props.product.display_name" /></p>
                 </t>
             </div>
         </xpath>
