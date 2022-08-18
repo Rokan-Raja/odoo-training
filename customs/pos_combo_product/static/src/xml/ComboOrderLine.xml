@@ -12,7 +12,7 @@
                 </t>
             </span>
             <t t-if="props.line.get_product().is_combo">
-              <t t-foreach="props.line.get_product().combo_product_id" t-as="prod_info">
+              <t t-foreach="props.line.get_product().combo_product" t-as="prod_info">
                   <p><t t-esc="prod_info.name" />
                       <t t-if="prod_info.quantity==1">
                           <span> </span>

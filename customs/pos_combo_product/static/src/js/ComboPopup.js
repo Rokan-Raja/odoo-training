@@ -4,7 +4,7 @@ odoo.define('pos_combo_product.ComboPopup', function(require) {
     const AbstractAwaitablePopup = require('point_of_sale.AbstractAwaitablePopup');
     const Registries = require('point_of_sale.Registries');
 
-    class ComboPopup extends AbstractAwaitablePopup {}
+    class ComboPopup extends AbstractAwaitablePopup{}
     ComboPopup.template = 'ComboPopup';
     ComboPopup.defaultProps = {
         confirmText: 'Ok',

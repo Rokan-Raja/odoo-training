@@ -3,6 +3,7 @@
     <template id="assets" name="pos_combo_product assets" inherit_id="point_of_sale.assets">
         <xpath expr="." position="inside">
             <script type="text/javascript" src="/pos_combo_product/static/src/js/ComboCheck.js" ></script>
+            <script type="text/javascript" src="/pos_combo_product/static/src/js/ComboList.js" ></script>
             <script type="text/javascript" src="/pos_combo_product/static/src/js/ComboPopup.js" ></script>
             <script type="text/javascript" src="/pos_combo_product/static/src/js/ProductScreen/ProductScreen.js" ></script>
             <link rel="stylesheet" href="/pos_combo_product/static/src/css/combo_product.css"></link>

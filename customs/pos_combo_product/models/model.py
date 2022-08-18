@@ -25,6 +25,14 @@ class PosComboProduct(models.Model):
             }
             data.append(value)
         return data
+    def combo_id(self,ids):
+        data = []
+        print(ids)
+        res = self.env['pos_combo_product.pos_combo_product'].search([('id', '=', ids)])
+        for val in res:
+            value = val.product_id.id
+            data.append(value)
+        return data
 
 
 class ComboProductTemplate(models.Model):
@@ -34,6 +42,7 @@ class ComboProductTemplate(models.Model):
     combo_product_id = fields.One2many('pos_combo_product.pos_combo_product', 'product_template_id', 'Combo')
     is_combo = fields.Boolean('Combo Product', default=False)
     combo_price = fields.Float('Combo Price', required=True)
+    combo_product = fields.Boolean(default=False)
 
 class PosOrderLine(models.Model):
     _inherit = 'pos.order.line'
