@@ -27,7 +27,6 @@ odoo.define("pos_combo_product.ProductScreen", function (require) {
                 if(event.detail.is_combo)
                 {
                 const options = await this._getAddProductOptions(product);
-                console.log(options);
                 var self = this;
                 const { confirmed } =await this.showPopup('ComboPopup', {
                 title: this.env._t('Combo Product'),

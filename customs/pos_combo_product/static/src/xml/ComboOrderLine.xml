@@ -14,14 +14,8 @@
             <t t-if="props.line.get_product().is_combo">
               <t t-foreach="props.line.get_product().combo_product" t-as="prod_info">
                   <p><t t-esc="prod_info.name" />
-                      <t t-if="prod_info.quantity==1">
-                          <span> </span>
-                          <t t-esc="props.line.quantity"/>.00 unit(s).
-                      </t>
-                      <t t-if="prod_info.quantity != 1">
-                          <span> </span>
-                          <t t-esc="props.line.quantity*prod_info.quantity"/>.00 unit(s).
-                      </t>
+                      <span> </span>
+                      <t t-esc="props.line.quantity*prod_info.quantity"/>.00 unit(s).
                   </p>
                 </t>
             </t>

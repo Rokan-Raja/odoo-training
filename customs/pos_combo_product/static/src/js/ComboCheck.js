@@ -35,7 +35,6 @@ odoo.define('pos_combo_product.ComboCheck', function (require) {
       _super_orderline.initialize.call(this,attr,options);
       this.combo_product = false;
       this.is_combo = false;
-      console.log(options);
     },
     init_from_JSON: function(json){
         _super_orderline.init_from_JSON.apply(this,arguments);
@@ -48,6 +47,12 @@ odoo.define('pos_combo_product.ComboCheck', function (require) {
         json.is_combo = this.get_product().is_combo;
         return json;
     },
+    export_for_printing: function(){
+        var orderlines = _super_orderline.export_for_printing.call(this,arguments);
+        orderlines.combo_list=this.get_product().combo_product;
+        orderlines.is_combo=this.get_product().is_combo;
+        return orderlines;
+    }
     });
 
 })

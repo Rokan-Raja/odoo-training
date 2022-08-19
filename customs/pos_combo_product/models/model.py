@@ -27,11 +27,11 @@ class PosComboProduct(models.Model):
         return data
     def combo_id(self,ids):
         data = []
-        print(ids)
-        res = self.env['pos_combo_product.pos_combo_product'].search([('id', '=', ids)])
-        for val in res:
-            value = val.product_id.id
-            data.append(value)
+        if ids:
+            res = self.env['pos_combo_product.pos_combo_product'].search([('id', '=', ids)])
+            for val in res:
+                value = val.product_id.id
+                data.append(value)
         return data
 
 

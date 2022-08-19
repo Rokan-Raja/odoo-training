@@ -30,6 +30,7 @@
     ],
     'qweb': [
         'static/src/xml/ComboDisplay.xml',
+        'static/src/xml/Receipt.xml',
         'static/src/xml/ComboList.xml',
         'static/src/xml/ComboPopup.xml',
         'static/src/xml/ComboOrderLine.xml',
