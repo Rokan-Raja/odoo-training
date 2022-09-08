@@ -1,0 +1,13 @@
+.hr-slash {
+  display: flex;
+}
+.hr-slash .hr-line {
+  width: 100%;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #858585;
+}
+.hr_img {
+  vertical-align: middle;
+}

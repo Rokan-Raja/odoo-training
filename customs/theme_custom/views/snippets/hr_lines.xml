@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="hr_line" name="Hr Lines">
+        <section>
+            <div class="hr-slash">
+                   <div class="hr-line"></div>
+                   <div class="hr-icon">
+                     <img class="hr_img" src="/theme_custom/static/src/img/chili.png" alt="Chili Image" />
+                   </div>
+                   <div class="hr-line"></div>
+                 </div>
+        </section>
+    </template>
+</odoo>

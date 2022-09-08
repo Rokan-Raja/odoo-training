@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="about_banner" name="About Banner">
+        <section class="about">
+            <div class="col-md-12 about_banner">
+                <div class="container centered">
+                    <div class="line"></div>
+                    <span>
+                        Warangal Spices Co
+                    </span>
+                    <div class="line"></div>
+                    <br/>
+                    <h1 style="color:white;">About Us</h1>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

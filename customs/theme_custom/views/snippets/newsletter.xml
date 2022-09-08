@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="news_letter" name="News Letter">
+        <section class="newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 newsletter_title">
+                        <p class="n_title">
+                            <span>Be always updated with us</span>
+                            <br/>Sign in with our newsletter
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input_button">
+                            <input type="text" id="mail" name="mail" placeholder="Leave your mail">
+                            </input>
+                            <a class="arrow_btn" id="main_btn" href="#">
+                                <img class="img-responsive" src="/theme_custom/static/src/img/arrow.png"
+                                     alt="Arrow Image"/>
+                            </a>
+                        </div>
+                    </div>
+                    <br />
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

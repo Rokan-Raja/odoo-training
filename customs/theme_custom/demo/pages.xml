@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template>
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <h1>This is Your Content</h1>
+                            <p>Isn't amazing to edit everything</p>
+                            <hr/>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+    <record id="hello_menu" model="website.menu">
+        <field name="name">Hello</field>
+        <field name="url">/page/hello</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">20</field>
+    </record>
+    <template id="dummy_theme_asset" name="website assete for Dummy theme" inherit_id="website.assets_frontend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/dummy_theme/static/style/custom.scss"/>
+        </xpath>
+    </template>
+</odoo>

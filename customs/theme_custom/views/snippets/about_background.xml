@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="about_background" name="About Background">
+        <section>
+            <div class="b_about">
+                <div class="abt_us_top">
+                    <p class="title">Warangal Spices Co</p>
+                    <div class="row">
+                        <div class="col-md-12 content">
+                            <ul class="o_w" style="padding-left:10px;">
+                                <li class="abt-li">
+                                    <font style="color: rgb(0, 0, 0);">Warangal Spices Co (2012), an associate company
+                                        of VPSA Rathina Nadar Group of Companies.
+                                        A traditional Business House in Dried Red Chillies with our roots based out of
+                                        Virudhunagar, Tamilnadu, South India.
+                                    </font>
+                                </li>
+                                <li class="abt-li">
+                                    With a strong vision of our forefathers we ( VPSA
+                                    Group) have made our presence in all the chillies growing states in India such
+                                    as Andhra Pradesh
+                                    ( Guntur -1966 ), Telangana State ( Khammam -1980 &amp; Warangal -1977),
+                                    Maharashtra (Nagpur 1986), Madhya Pradesh ( Indore -1997), Karnataka (Byadagi
+                                    -1980).
+                                </li>
+                            </ul>
+                            <ul class="o_w text-full" style="padding-left:10px;">
+                                <li class="abt-li">
+                                    Warangal Spices Co Core business has been trading
+                                    in Whole, Ground &amp; Crushed Dry Red Chilies of all
+                                    grades &amp; parameters.
+                                </li>
+                            </ul>
+                            <ul id="moretext" class="moretext o_w" style="padding-left:10px;">
+                                <li class="abt-li">
+                                    Warangal Spices Co has been Trading &amp;
+                                    Manufacturing all commodities such as Turmeric,
+                                    Dried Red Chilies, Cumin, Ground Nut Seeds, Maize, Cotton, Rice &amp;
+                                    Pulses with a core team of well qualified 3rd generation entrepreneurs ready to
+                                    work people,
+                                    embedded with committed Values in Farmer Empowering, Procurement of Quality
+                                    Material,
+                                    Quality Analysis Procedures, Hygienic Processing Standards, Competitive
+                                    Pricing, Prompt &amp; Committed Shipments &amp;
+                                    Customer Satisfaction with regular guidance of our superior Generations.
+
+                                </li>
+                                <li class="abt-li">
+                                    Warangal Spices Co with this experience and
+                                    upbringing is catering to the various sectors of business
+                                    houses ranging from Domestic Market Wholesaler, Domestic Masala Manufacturers
+                                    &amp; Pan India Exporters.
+                                </li>
+                                <li class="abt-li">
+                                    Warangal Spices Co has further commenced
+                                    our business In direct Exports across the globe with satisfied
+                                    customers in the USA, China, Thailand, Indonesia, Malaysia, Russia &amp; Europe.
+                                </li>
+                                <li class="abt-li">
+                                    At Warangal Spices Co every product we supply
+                                    adhere to strict manufacturing standards &amp;
+                                    processing standards. Warangal Spices Co facility is US FDA Registered, FSSAI
+                                    Registered, Spices Board Registered &amp;
+                                    FiEO Registered.
+                                </li>
+                                <li class="abt-li">
+                                    Warangal Spices Company is in the process of
+                                    getting certified in Halal, Kosher, GMP &amp; BRC.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="title">Our Founder</p>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <img class="img img-responsive"
+                             src="/theme_custom/static/src/img/about/founder.jpg"
+                             alt="Odoo image and text block"/>
+                    </div>
+                    <div class="col-md-8 col-sm-6">
+                        <ul class="list_group list-unstyled">
+                            <li class="list_group_item">
+                                Our Mentor Shri Rathinam Nadar &amp; Brothers
+                                were the Founders of this Trading House way back around our Independence Era
+                                (1947).
+                            </li>
+                            <li class="list_group_item">
+                                <br/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="title">Our Vision</p>
+                <ul>
+                    <li>Developing Transparent &amp; Traceable Procurement, Processing Standards</li>
+                    <li>Improvising on the Standards of Processing Material &amp; Skilled Labor</li>
+                    <li>Enhancing Machinery to attain high standards on Hygienic Process</li>
+                    <li>n the Process to add True Value to the FARMER</li>
+                </ul>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center content-bold">
+                            <font style="color: rgb(189, 51, 42); ">
+                                <i>THE HARDER YOUR WORK FOR SOMETHING, THE GREATER YOU'LL FEEL ACHIEVING IT</i>
+                            </font>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

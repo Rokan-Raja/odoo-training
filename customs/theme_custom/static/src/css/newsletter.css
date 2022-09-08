@@ -1,0 +1,92 @@
+.newsletter
+{
+ background: #bc1129;
+ padding-top:10px;
+}
+.arrow_btn
+{
+text-align: center;
+font-size: 1rem;
+background-color:black;
+padding: 5px;
+margin-left: -8px;
+padding-bottom: 6.38px;
+padding-top: 4.6px;
+}
+
+.input_button input
+{
+border-radius: 5px;
+border: 0px;
+text-align: left;
+padding-right: 40px;
+padding-left: 10px;
+padding-bottom: 3px;
+padding-top: 2px;
+}
+.n_title {
+ color:white;
+ font-size:18px;
+}
+.n_title span
+{
+text-transform:uppercase;
+font-weight:bold;
+}
+
+@media  only screen and (min-width: 992px)
+{
+.input_button input
+{
+padding-right: 40px;
+padding-left: 10px;
+padding-bottom: 3px;
+padding-top: 2px;
+}
+.n_title {
+float:right;
+}
+.newsletter_title
+{
+margin-left:-5%;
+}
+.input_button
+{
+margin-left:13%;
+text-align:left;
+}
+.input_button
+{
+padding-bottom:0px;
+}
+}
+@media  only screen and (max-width: 992px)
+{
+.input_button input
+{
+padding-right: 20px;
+padding-left: 5px;
+padding-bottom: 3px;
+padding-top: 2px;
+}
+.input_button
+{
+margin-left:0%;
+text-align:center;
+}
+.newsletter_title
+{
+margin-left:0%;
+}
+.n_title {
+text-align:center;
+}
+.input_button
+{
+padding-bottom:5px;
+}
+}
+
+input:focus {
+    outline:none;
+}

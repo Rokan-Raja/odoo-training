@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="heading_center" name="Heading Center">
+        <section style="margin-top:50px;">
+            <div class="container center_heading" style="margin-top:120px;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="title">Well Planned Infrastructure</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="content">Warangal Spices Company Pvt. Ltd. has Dried Red Chilli Grinding &amp; Processing facility at Warangal, Telangana State. Advantage being we are at the source of the cultivation area of most commodities we trade in. This enables us to procure the finest quality directly from farmers at very competitive market prices. Each product we specialize on involves extensive care to ensure the final products holds true to its natural characteristics. We, at Warangal Spice Company Pvt. Ltd., take every possible step to ensure the products we supply are of the highest quality by adhering to all International Standards and Quality parameters.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

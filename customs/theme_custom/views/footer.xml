@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <template id="theme_xtream_footer" inherit_id="website.layout" name="Xtream Footer">
+            <xpath expr="//footer" position="replace">
+                <section class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="footer-title"><span>WSC</span>SINCE 1947
+                                </p>
+                                <p>Taste &amp; Healthy Indian Spices</p>
+                                <div class="footer-icon">
+                                    <li>
+                                        <a target="_blank" class="fa fa-pinterest text-muted" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" class="fa fa-linkedin text-muted" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" class="fa fa-twitter text-muted" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" class="fa fa-facebook text-muted" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" class="fa fa-instagram text-muted" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" class="fa fa-envelope text-muted" href="#"></a>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="footer-title">Important Links</p>
+                                <div class="footer-links">
+                                    <li>
+                                        <a href="#">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms and Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy Statement</a>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="footer-title">Contact Us</p>
+                                <p>
+                                    Warangal Spices Company Private Limited
+                                    <br/>
+                                    6/45, New Grain Market
+                                    <br/>
+                                    Enumamula - 506002
+                                    <br/>
+                                    Telangana - India
+                                    <br/>
+                                    <i class="fa fa-phone"><a href="#">+91-7550346317</a></i><br />
+                                    <i class="fa fa-envelope"><a href="#">rokanraja007@gmail.com</a></i><br />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="made_by text-muted">
+                            ©2019 <span>Warangal Spices Company</span>.All Rights Reserved
+                        </div>
+                    </div>
+                </section>
+            </xpath>
+        </template>
+    </data>
+</odoo>
